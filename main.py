@@ -13,4 +13,6 @@ def print_hi(name):
 if __name__ == '__main__':
     print_hi('PyCharm')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+    # 我发现很多微信公众号文章，基本都是把claude code 文档在翻译而已，这种 ai 就能做。而且 ai 更加锲而不舍。
+
