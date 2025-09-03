@@ -1,146 +1,146 @@
-# Essential Developer Tools MCP Servers Every Software Engineer Should Know in 2025
+# 2025年每位软件工程师都应该了解的必备开发工具 MCP 服务器
 
-## Developer Tools Overview
+## 开发工具概览
 
-The Model Context Protocol (MCP) has revolutionized how developers integrate AI assistants with their daily tools and workflows. With over 1,000 community-built servers and growing, MCP enables direct AI interaction with development environments, testing frameworks, browser automation tools, and specialized development utilities.
+Model Context Protocol (MCP) 彻底改变了开发者将AI助手集成到日常工具和工作流程中的方式。随着超过1000个社区构建的服务器不断增长，MCP使AI能够直接与开发环境、测试框架、浏览器自动化工具和专业开发实用程序进行交互。
 
-This comprehensive guide explores the most essential developer tool MCP servers that are transforming software engineering productivity in 2025, from browser automation to intelligent code search and real-time documentation access.
+这份综合指南探讨了在2025年正在改变软件工程生产力的最重要的开发工具MCP服务器，从浏览器自动化到智能代码搜索和实时文档访问。
 
 ---
 
-## Core Developer Tools MCP Servers
+## 核心开发工具 MCP 服务器
 
-### 🎭 Browser Automation & Testing
+### 🎭 浏览器自动化与测试
 
-**Playwright MCP Server** ⭐ *Most Popular (12K+ GitHub stars)*
+**Playwright MCP Server** ⭐ *最受欢迎 (12K+ GitHub stars)*
 
-Microsoft's official Playwright MCP server is the crown jewel of browser automation:
+Microsoft官方的Playwright MCP服务器是浏览器自动化的皇冠明珠：
 
-**Core Capabilities:**
-- **Multi-Browser Support**: Chrome, Firefox, Safari, Edge with consistent APIs
-- **Headless & Headed Modes**: Full control over browser visibility
-- **Device Emulation**: Test across mobile, tablet, and desktop viewports
-- **Network Interception**: Mock APIs, capture requests, simulate offline conditions
-- **Visual Testing**: Screenshot comparison, video recording, PDF generation
-- **Auto-Wait Intelligence**: Smart waiting for elements, eliminating flaky tests
+**核心功能：**
+- **多浏览器支持**：Chrome、Firefox、Safari、Edge，配备一致的API
+- **无头和有头模式**：完全控制浏览器可见性
+- **设备模拟**：跨移动端、平板和桌面视窗进行测试
+- **网络拦截**：模拟API、捕获请求、模拟离线条件
+- **视觉测试**：截图比较、视频录制、PDF生成
+- **智能等待**：智能等待元素，消除不稳定测试
 
-**Advanced Features:**
-- **Accessibility Tree Navigation**: Uses structured data instead of pixel-based interaction
-- **Parallel Execution**: Run tests across multiple browsers simultaneously
-- **Trace Viewer**: Debug test failures with timeline and network activity
-- **Codegen**: Generate test code by recording user interactions
-- **Component Testing**: Isolated component testing within real browser environments
+**高级特性：**
+- **可访问性树导航**：使用结构化数据而非基于像素的交互
+- **并行执行**：跨多个浏览器同时运行测试
+- **跟踪查看器**：通过时间轴和网络活动调试测试失败
+- **代码生成**：通过记录用户交互生成测试代码
+- **组件测试**：在真实浏览器环境中进行隔离组件测试
 
-**Installation & Setup:**
+**安装与设置：**
 ```bash
 npx @playwright/mcp@latest
 ```
 
-**Real-World Use Cases:**
-- *E2E Testing*: "Generate comprehensive test coverage for our checkout flow across all browsers"
-- *Web Scraping*: "Extract product data from competitor websites and generate comparison reports"
-- *Visual Regression*: "Compare current UI against baseline screenshots and identify visual changes"
-- *Performance Testing*: "Measure page load times and core web vitals across different regions"
+**实际应用案例：**
+- *端到端测试*: "为我们的结账流程在所有浏览器中生成全面的测试覆盖"
+- *网络爬虫*: "从竞争对手网站提取产品数据并生成比较报告"
+- *视觉回归测试*: "将当前UI与基准截图进行比较并识别视觉变化"
+- *性能测试*: "测量不同地区的页面加载时间和核心网页指标"
 
 ---
 
-### 📚 Code Intelligence & Documentation
+### 📚 代码智能与文档
 
-**Context7 MCP Server** ⭐ *Documentation Revolution*
+**Context7 MCP Server** ⭐ *文档革命*
 
-Upstash's Context7 MCP server eliminates the constant tab-switching between coding and documentation by delivering up-to-date, version-specific library documentation directly into your AI assistant's context:
+Upstash的Context7 MCP服务器通过将最新的、特定版本的库文档直接传递到您的AI助手上下文中，消除了编码和文档之间的频繁标签切换：
 
-**Core Capabilities:**
-- **Real-Time Documentation Access**: Fetches current official docs directly into your prompt context
-- **Version-Specific Examples**: Provides accurate code examples for the exact library version you're using
-- **Universal MCP Compatibility**: Works with Claude Desktop, Cursor, Windsurf, and other MCP clients
-- **No Hallucinated APIs**: Eliminates outdated or incorrect API references from LLM responses
-- **Direct Source Integration**: Pulls documentation straight from official sources, not cached data
+**核心功能：**
+- **实时文档访问**：将当前官方文档直接获取到您的提示上下文中
+- **版本特定示例**：为您使用的确切库版本提供准确的代码示例
+- **通用MCP兼容性**：与Claude Desktop、Cursor、Windsurf和其他MCP客户端兼容
+- **无虚假API**：消除LLM响应中过时或不正确的API引用
+- **直接源集成**：直接从官方源提取文档，而非缓存数据
 
-**Advanced Features:**
-- **Library Resolution**: Automatically converts general library names to Context7-compatible IDs
-- **Smart Context Injection**: Intelligently parses and injects relevant documentation sections
-- **Multi-Framework Support**: Covers thousands of popular libraries and frameworks
-- **Real-Time Updates**: Always reflects the latest documentation changes and releases
+**高级特性：**
+- **库解析**：自动将通用库名称转换为Context7兼容的ID
+- **智能上下文注入**：智能解析并注入相关文档部分
+- **多框架支持**：涵盖数千个流行的库和框架
+- **实时更新**：始终反映最新的文档更改和发布
 
-**Installation & Setup:**
+**安装与设置：**
 ```bash
-# Via NPM
+# 通过 NPM
 npm install @upstash/context7-mcp
 
-# Via Smithery CLI
+# 通过 Smithery CLI
 npx @smithery/cli install @upstash/context7-mcp
 ```
 
-**Real-World Use Cases:**
-- *Learning New Frameworks*: "How do I implement authentication in Next.js 15? use context7"
-- *API Integration*: "Show me the latest FastAPI dependency injection patterns use context7"
-- *Version Migration*: "What's changed in React 19 hooks compared to React 18? use context7"
-- *Best Practices*: "How should I structure Supabase queries in 2025? use context7"
+**实际应用案例：**
+- *学习新框架*: "如何在Next.js 15中实现身份验证？使用context7"
+- *API集成*: "使用context7显示最新的FastAPI依赖注入模式"
+- *版本迁移*: "与React 18相比，React 19 hooks有什么变化？使用context7"
+- *最佳实践*: "在2025年应该如何构建Supabase查询？使用context7"
 
 ---
 
-### 🔍 Code Search & Discovery
+### 🔍 代码搜索与发现
 
-**Grep MCP Server** ⭐ *Million Repository Search*
+**Grep MCP Server** ⭐ *百万仓库搜索*
 
-Vercel's Grep MCP server transforms how developers discover implementation patterns by providing AI-powered search across millions of public GitHub repositories:
+Vercel的Grep MCP服务器通过提供跨数百万公共GitHub仓库的AI驱动搜索，改变了开发者发现实现模式的方式：
 
-**Core Capabilities:**
-- **Massive Repository Index**: Search across 1M+ public GitHub repositories
-- **Pattern-Based Search**: Find specific code patterns, functions, and implementations
-- **Advanced Filtering**: Filter by programming language, repository, and file path
-- **Lightning-Fast Results**: Sub-second search performance with ranked relevance
-- **Syntax Highlighting**: Results include proper code formatting and highlighting
+**核心功能：**
+- **海量仓库索引**：搜索100万+公共GitHub仓库
+- **基于模式的搜索**：查找特定的代码模式、函数和实现
+- **高级过滤**：按编程语言、仓库和文件路径过滤
+- **闪电般快速的结果**：亚秒级搜索性能，具有排序相关性
+- **语法高亮**：结果包含适当的代码格式和高亮显示
 
-**When Should You Use Grep MCP?**
+**何时应该使用Grep MCP？**
 
-*Perfect for these scenarios:*
-- **🔍 Learning Unfamiliar APIs**: When implementing libraries you haven't used before and need real-world examples
-- **🏗️ Architecture Decisions**: Finding proven patterns for complex implementations (auth systems, payment processing, error handling)
-- **🐛 Debugging Unusual Issues**: Discovering how others solved similar edge cases or integration challenges  
-- **📚 Best Practices Research**: Understanding industry standards by examining popular repositories
-- **🔧 Migration Guidance**: Finding examples of developers upgrading between framework versions
+*在以下场景中表现完美：*
+- **🔍 学习不熟悉的API**：当实现您以前没有使用过的库并需要真实世界示例时
+- **🏗️ 架构决策**：为复杂实现寻找经过验证的模式（认证系统、支付处理、错误处理）
+- **🐛 调试异常问题**：发现其他人如何解决类似的边缘案例或集成挑战
+- **📚 最佳实践研究**：通过检查流行仓库了解行业标准
+- **🔧 迁移指导**：寻找开发者在框架版本之间升级的示例
 
-*Choose Grep MCP over traditional documentation when:*
-- Official docs are sparse or lack practical examples
-- You need production-ready code, not simplified tutorials
-- You want to see multiple approaches to the same problem
-- You're working with newer libraries where Stack Overflow has limited content
+*在以下情况下选择Grep MCP而非传统文档：*
+- 官方文档稀少或缺乏实用示例
+- 您需要生产就绪的代码，而不是简化的教程
+- 您希望看到同一问题的多种解决方法
+- 您正在使用Stack Overflow内容有限的较新库
 
-**Advanced Features:**
-- **Regular Expression Support**: Complex pattern matching with full regex capabilities
-- **Repository Grouping**: Organized results by repository with summary statistics
-- **Language Intelligence**: Smart language detection and filtering
-- **Path-Specific Search**: Target specific directories or file types
-- **Real Production Code**: Learn from actual production implementations, not tutorials
+**高级特性：**
+- **正则表达式支持**：具有完整正则表达式功能的复杂模式匹配
+- **仓库分组**：按仓库组织结果并提供摘要统计
+- **语言智能**：智能语言检测和过滤
+- **路径特定搜索**：针对特定目录或文件类型
+- **真实生产代码**：从实际生产实现中学习，而非教程
 
-**Installation & Setup:**
+**安装与设置：**
 ```bash
-# Via PyPI
+# 通过 PyPI
 uv add grep-mcp
 
-# From source
+# 从源码安装
 git clone https://github.com/galperetz/grep-mcp.git
 cd grep-mcp && uv sync
 ```
 
-**Real-World Use Cases:**
-- *Implementation Patterns*: "Find real-world examples of React error boundaries in production apps"
-- *API Integration*: "Show me how developers handle Stripe webhooks in Node.js applications"
-- *Architecture Learning*: "Find examples of clean architecture patterns in Go microservices"
-- *Best Practices Discovery*: "How do production apps implement rate limiting with Redis?"
+**实际应用案例：**
+- *实现模式*: "在生产应用中查找React错误边界的真实世界示例"
+- *API集成*: "展示开发者如何在Node.js应用中处理Stripe webhooks"
+- *架构学习*: "查找Go微服务中干净架构模式的示例"
+- *最佳实践发现*: "生产应用如何使用Redis实现速率限制？"
 
 ---
 
-## Conclusion
+## 结论
 
-These three MCP servers represent the cutting edge of AI-assisted development tools in 2025:
+这三个MCP服务器代表了2025年AI辅助开发工具的前沿技术：
 
-- **Playwright MCP** dominates browser automation and testing with its comprehensive multi-browser support and intelligent auto-wait features
-- **Context7 MCP** revolutionizes documentation access by delivering up-to-date, version-specific docs directly into your AI context
-- **Grep MCP** transforms code discovery by providing instant access to millions of real-world GitHub implementations
+- **Playwright MCP** 凭借其全面的多浏览器支持和智能自动等待功能，在浏览器自动化和测试领域占据主导地位
+- **Context7 MCP** 通过将最新的、特定版本的文档直接传递到您的AI上下文中，革命性地改变了文档访问
+- **Grep MCP** 通过提供对数百万真实世界GitHub实现的即时访问，改变了代码发现方式
 
-Together, they form a powerful trinity that eliminates context switching, reduces outdated information, and accelerates learning from production code patterns. As the MCP ecosystem continues to expand, these servers have established themselves as indispensable tools for modern software engineering workflows.
+这些工具共同形成了一个强大的三位一体，消除了上下文切换，减少了过时信息，并加速了从生产代码模式中的学习。随着MCP生态系统的持续扩展，这些服务器已经确立了自己作为现代软件工程工作流程不可或缺的工具地位。
 
-For the latest MCP servers and community resources, visit the [official MCP directory](https://github.com/modelcontextprotocol/servers) and join the growing community of developers transforming their AI-assisted development experience.
+有关最新的MCP服务器和社区资源，请访问[官方MCP目录](https://github.com/modelcontextprotocol/servers)，加入不断增长的开发者社区，共同改变AI辅助开发体验。
